@@ -11815,3 +11815,42 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 background-color: #191c1f;
 }
+<!-- ...existing code... -->
+<style type="text/css" title="Default">
+    body, div, h1, h2, h3, span, p {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+    }
+    html {
+        height:70%;
+    }
+    body {
+        height:100%;
+        margin: 0px;
+        overflow:initial !important;
+        font-size: 10pt;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    ::-webkit-scrollbar {
+        background-color: rgba(0,0,0,0.5);
+        width: 0.75em;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color:  rgba(255,255,255,0.5);
+    }
+    /* Responsive logo size */
+    .logo-vtour {
+        max-width: 180px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+    @media (max-width: 767.98px) {
+        .logo-vtour {
+            max-width: 120px;
+        }
+        .section-heading {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+<!-- ...existing code... -->
