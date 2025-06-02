@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.0.3/17298
 // Filename: skin5.ggsk
-// Generated 2025-05-30T04:25:41
+// Generated 2025-06-03T06:24:17
 
 function pano2vrSkin(player,base) {
 	player.addVariable('opt_hotspot_preview', 2, true);
@@ -2072,7 +2072,7 @@ function pano2vrSkin(player,base) {
 		el.className='ggskin ggskin_textdiv';
 		el.ggTextDiv=els;
 		el.ggId="tt_projection";
-		el.ggDx=0;
+		el.ggDx=127;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_text ";
@@ -2137,7 +2137,7 @@ function pano2vrSkin(player,base) {
 					me._tt_projection.ggUpdatePosition(true);
 				}
 				else {
-					me._tt_projection.ggDx=0;
+					me._tt_projection.ggDx=127;
 					me._tt_projection.style.top='32px';
 					me._tt_projection.ggUpdatePosition(true);
 				}
@@ -8046,94 +8046,6 @@ function pano2vrSkin(player,base) {
 		}
 		me._radarback.appendChild(me._radarbeam);
 		me.divSkin.appendChild(me._radarback);
-		el=me._image_1=document.createElement('div');
-		els=me._image_1__img=document.createElement('img');
-		els.className='ggskin ggskin_image_1';
-		hs=basePath + 'images/image_1.png';
-		els.setAttribute('src',hs);
-		els.ggNormalSrc=hs;
-		els.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;');
-		els.className='ggskin ggskin_image';
-		els['ondragstart']=function() { return false; };
-		player.checkLoaded.push(els);
-		el.appendChild(els);
-		el.ggSubElement = els;
-		el.ggId="Image 1";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_image ";
-		el.ggType='image';
-		hs ='';
-		hs+='height : 60px;';
-		hs+='left : 730px;';
-		hs+='position : absolute;';
-		hs+='top : 11px;';
-		hs+='visibility : inherit;';
-		hs+='width : 60px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style[domTransform + 'Origin']='50% 50%';
-		me._image_1.ggIsActive=function() {
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			return player.getCurrentNode();
-		}
-		me._image_1.ggUpdatePosition=function (useTransition) {
-		}
-		el=me._text_1=document.createElement('div');
-		els=me._text_1__text=document.createElement('div');
-		el.className='ggskin ggskin_textdiv';
-		el.ggTextDiv=els;
-		el.ggId="Text 1";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_text ";
-		el.ggType='text';
-		hs ='';
-		hs+='height : 38px;';
-		hs+='left : 50px;';
-		hs+='position : absolute;';
-		hs+='top : 11px;';
-		hs+='visibility : inherit;';
-		hs+='width : 193px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style[domTransform + 'Origin']='50% 50%';
-		hs ='position:absolute;';
-		hs += 'box-sizing: border-box;';
-		hs+='cursor: default;';
-		hs+='left: 0px;';
-		hs+='top:  0px;';
-		hs+='width: 193px;';
-		hs+='height: 38px;';
-		hs+='border: 0px solid #000000;';
-		hs+='color: rgba(255,250,244,1);';
-		hs+='font-size: 15px;';
-		hs+='font-weight: inherit;';
-		hs+='text-align: center;';
-		hs+='white-space: nowrap;';
-		hs+='padding: 0px 1px 0px 1px;';
-		hs+='overflow: hidden;';
-		els.setAttribute('style',hs);
-		els.innerHTML="VIRTUAL TOUR<br\/>UNIVERSITAS PAKUAN";
-		el.appendChild(els);
-		me._text_1.ggIsActive=function() {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return player.getCurrentNode();
-		}
-		me._text_1.ggUpdatePosition=function (useTransition) {
-		}
-		me._image_1.appendChild(me._text_1);
-		me.divSkin.appendChild(me._image_1);
 		el=me._node_scroller=document.createElement('div');
 		els=me._node_scroller__content=document.createElement('div');
 		el.ggContent=els;
@@ -9678,6 +9590,118 @@ function pano2vrSkin(player,base) {
 		}
 		me._information.appendChild(me._ht_info_close);
 		me.divSkin.appendChild(me._information);
+		el=me._logo1=document.createElement('div');
+		els=me._logo1__img=document.createElement('img');
+		els.className='ggskin ggskin_logo1';
+		hs=basePath + 'images/logo1.png';
+		els.setAttribute('src',hs);
+		els.ggNormalSrc=hs;
+		els.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;;');
+		els.className='ggskin ggskin_image';
+		els['ondragstart']=function() { return false; };
+		player.checkLoaded.push(els);
+		el.appendChild(els);
+		el.ggSubElement = els;
+		el.ggId="logo1";
+		el.ggDx=-76;
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		el.ggVisible=true;
+		el.className="ggskin ggskin_image ";
+		el.ggType='image';
+		hs ='';
+		hs+='height : 60px;';
+		hs+='left : -10000px;';
+		hs+='position : absolute;';
+		hs+='top : 0px;';
+		hs+='visibility : inherit;';
+		hs+='width : 60px;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style[domTransform + 'Origin']='50% 50%';
+		me._logo1.ggIsActive=function() {
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			return player.getCurrentNode();
+		}
+		me._logo1.ggUpdatePosition=function (useTransition) {
+			if (useTransition==='undefined') {
+				useTransition = false;
+			}
+			if (!useTransition) {
+				this.style[domTransition]='none';
+			}
+			if (this.parentNode) {
+				var pw=this.parentNode.clientWidth;
+				var w=this.offsetWidth;
+					this.style.left=(this.ggDx + pw/2 - w/2) + 'px';
+			}
+		}
+		el=me._text_2=document.createElement('div');
+		els=me._text_2__text=document.createElement('div');
+		el.className='ggskin ggskin_textdiv';
+		el.ggTextDiv=els;
+		el.ggId="Text 2";
+		el.ggDx=116;
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		el.ggVisible=true;
+		el.className="ggskin ggskin_text ";
+		el.ggType='text';
+		hs ='';
+		hs+='height : 38px;';
+		hs+='left : -10000px;';
+		hs+='position : absolute;';
+		hs+='top : 11px;';
+		hs+='visibility : inherit;';
+		hs+='width : 193px;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style[domTransform + 'Origin']='50% 50%';
+		hs ='position:absolute;';
+		hs += 'box-sizing: border-box;';
+		hs+='cursor: default;';
+		hs+='left: 0px;';
+		hs+='top:  0px;';
+		hs+='width: 193px;';
+		hs+='height: 38px;';
+		hs+='border: 0px solid #000000;';
+		hs+='color: rgba(255,250,244,1);';
+		hs+='font-size: 15px;';
+		hs+='font-weight: inherit;';
+		hs+='text-align: center;';
+		hs+='white-space: nowrap;';
+		hs+='padding: 0px 1px 0px 1px;';
+		hs+='overflow: hidden;';
+		els.setAttribute('style',hs);
+		els.innerHTML="VIRTUAL TOUR<br\/>UNIVERSITAS PAKUAN";
+		el.appendChild(els);
+		me._text_2.ggIsActive=function() {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+				return this.parentNode.ggElementNodeId();
+			}
+			return player.getCurrentNode();
+		}
+		me._text_2.ggUpdatePosition=function (useTransition) {
+			if (useTransition==='undefined') {
+				useTransition = false;
+			}
+			if (!useTransition) {
+				this.style[domTransition]='none';
+			}
+			if (this.parentNode) {
+				var pw=this.parentNode.clientWidth;
+				var w=this.offsetWidth + 0;
+					this.style.left=(this.ggDx + pw/2 - w/2) + 'px';
+			}
+		}
+		me._logo1.appendChild(me._text_2);
+		me.divSkin.appendChild(me._logo1);
 		me._popup_video_file.ggVideoSource = 'media/';
 		me._popup_video_file.ggVideoNotLoaded = true;
 		me._popup_video_url.ggVideoSource = '';
@@ -12939,7 +12963,7 @@ function pano2vrSkin(player,base) {
 		el.appendChild(elo);
 		el.ggId="ht_info_image";
 		el.ggDx=0;
-		el.ggDy=0;
+		el.ggDy=1;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_svg ";
